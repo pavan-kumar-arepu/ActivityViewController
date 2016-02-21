@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +17,83 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EvB-no-Zm2">
+                                <rect key="frame" x="8" y="50" width="592" height="170"/>
+                                <color key="backgroundColor" red="0.52311317420000003" green="1" blue="0.99486586079999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="flm-CY-VF7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="i9B-8K-Ttp"/>
+                                </connections>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZoO-Fn-Fev">
+                                <rect key="frame" x="277" y="331" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="37" id="6yo-De-3MJ"/>
+                                    <constraint firstAttribute="height" constant="37" id="fd1-qr-H1a"/>
+                                </constraints>
+                                <state key="normal" image="share.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="6yo-De-3MJ"/>
+                                        <exclude reference="fd1-qr-H1a"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="6yo-De-3MJ"/>
+                                        <include reference="fd1-qr-H1a"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="showActivity:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Z0d-wl-IYD"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EvB-no-Zm2" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-8" id="66H-bv-If6"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="ZoO-Fn-Fev" secondAttribute="bottom" constant="323" id="7KT-wR-BAR"/>
+                            <constraint firstItem="ZoO-Fn-Fev" firstAttribute="top" secondItem="EvB-no-Zm2" secondAttribute="bottom" constant="51" id="AEE-8Z-DRw">
+                                <variation key="widthClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="EvB-no-Zm2" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="30" id="BLd-fS-yEf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EvB-no-Zm2" secondAttribute="trailing" constant="-16" id="Kl7-Ka-qPm"/>
+                            <constraint firstItem="ZoO-Fn-Fev" firstAttribute="top" secondItem="EvB-no-Zm2" secondAttribute="bottom" constant="20" id="Woj-kJ-r9f"/>
+                            <constraint firstItem="ZoO-Fn-Fev" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="e0o-EY-nwb"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="AEE-8Z-DRw"/>
+                                <exclude reference="Woj-kJ-r9f"/>
+                                <exclude reference="e0o-EY-nwb"/>
+                                <exclude reference="7KT-wR-BAR"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="AEE-8Z-DRw"/>
+                                <include reference="Woj-kJ-r9f"/>
+                                <include reference="e0o-EY-nwb"/>
+                                <include reference="7KT-wR-BAR"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="myTextView" destination="EvB-no-Zm2" id="86z-aX-1fz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="share.png" width="300" height="300"/>
+    </resources>
 </document>

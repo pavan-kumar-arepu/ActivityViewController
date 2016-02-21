@@ -14,6 +14,7 @@
 		F4CEB98B1BE26CCA002559C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4CEB98A1BE26CCA002559C7 /* Images.xcassets */; };
 		F4CEB98E1BE26CCA002559C7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4CEB98C1BE26CCA002559C7 /* LaunchScreen.xib */; };
 		F4CEB99A1BE26CCA002559C7 /* ActivityViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CEB9991BE26CCA002559C7 /* ActivityViewControllerTests.m */; };
+		F4CEB9A41BE277EC002559C7 /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = F4CEB9A31BE277EC002559C7 /* share.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		F4CEB9931BE26CCA002559C7 /* ActivityViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ActivityViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4CEB9981BE26CCA002559C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4CEB9991BE26CCA002559C7 /* ActivityViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActivityViewControllerTests.m; sourceTree = "<group>"; };
+		F4CEB9A31BE277EC002559C7 /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				F4CEB9851BE26CCA002559C7 /* ViewController.m */,
 				F4CEB9871BE26CCA002559C7 /* Main.storyboard */,
 				F4CEB98A1BE26CCA002559C7 /* Images.xcassets */,
+				F4CEB9A31BE277EC002559C7 /* share.png */,
 				F4CEB98C1BE26CCA002559C7 /* LaunchScreen.xib */,
 				F4CEB97D1BE26CCA002559C7 /* Supporting Files */,
 			);
@@ -202,6 +205,7 @@
 				F4CEB9891BE26CCA002559C7 /* Main.storyboard in Resources */,
 				F4CEB98E1BE26CCA002559C7 /* LaunchScreen.xib in Resources */,
 				F4CEB98B1BE26CCA002559C7 /* Images.xcassets in Resources */,
+				F4CEB9A41BE277EC002559C7 /* share.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +420,7 @@
 				F4CEB99F1BE26CCA002559C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F4CEB9A01BE26CCA002559C7 /* Build configuration list for PBXNativeTarget "ActivityViewControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +429,7 @@
 				F4CEB9A21BE26CCA002559C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
